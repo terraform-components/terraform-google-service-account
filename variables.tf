@@ -3,6 +3,7 @@ variable "name" {
 }
 
 variable "permissions" {
-  type = list(string)
+  type    = list(string)
+  default = []
 }
 
