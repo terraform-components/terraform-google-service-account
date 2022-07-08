@@ -1,36 +1,41 @@
-# Terraform files
-.terraform
-terraform.tfstate
-terraform.tfvars
-*.tfstate*
+# Local .terraform directories
+**/.terraform/*
 
-.terraspace-cache
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# tf lock file shouldnt be in modules
+.terraform.lock.hcl
+
+.terragrunt-cache
 *.plan
+
+crash.log
+
+.envrc
+
+.infracost
 
 # OS X files
 .history
 .DS_Store
+._*
 
-# Common ruby files
-*.gem
-*.rbc
-.env*
-.idea
-/.bundle
-/.config
-/.yardoc
-/_yardoc
-/coverage
-/doc/
-/Gemfile.lock
-/InstalledFiles
-/lib/bundler/man
-/log
-/output
-/pkg
-/rdoc
-/spec/fixtures/project/output
-/spec/reports
-/test/tmp
-/test/version_tmp
-/tmp
+# Emacs save files
+*~
+\#*\#
+.\#*
+
+# Vim-related files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# IntelliJ IDEA files:
+.idea/
+
+# Visual Studio Code files:
+.vscode/

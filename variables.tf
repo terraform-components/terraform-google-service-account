@@ -10,4 +10,3 @@ variable "permissions" {
   type    = list(string)
   default = []
 }
-
